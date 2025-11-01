@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="../Imagens/LogoEGGIK.png" alt="logo EGGIK" width="100" height="100">
+        <h1>EGGIK Cactoslentas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Index.html">Pagina principal</a></li>
+            <li><a href="Produtos.html">Mais Produtos</a></li>
+            <li><a href="Fale-Conosco.html">Fale conosco</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Carrinho</h2>
+
+        <form action="meuProduto" method="get">
+            <fieldset>
+                <legend>Produtos selecionados</legend>
+
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" value="Rosa do deserto viúva negra" size="30">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="quantidade">Quantidade</label>
+                    <input type="text" id="quantidade" name="qnt" value="3" size="1">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="valor">Valor</label>
+                    <input type="text" id="valor" value="236,70" size="6">
+                </div>
+            </fieldset>
+        </form>
+
+        <form action="meuCartao.php" method="post">
+            <fieldset>
+                <legend>Pagamento no cartão</legend>
+
+                <label for="cartao">N° do cartão</label>
+                <input type="text" id="cartao" name="cartao" minlength="4" maxlength="4" size="1" value="0009">
+                <input type="text" id="cartao1" name="cartao1" minlength="4" maxlength="4" size="1" value="1234">
+                <input type="text" id="cartao2" name="cartao2" minlength="4" maxlength="4" size="1" value="0987">
+                <input type="text" id="cartao3" name="cartao3" minlength="4" maxlength="4" size="1" value="6543">
+
+                <br>
+
+                <label for="vencimento">Data de vencimento</label>
+                <input type="text" id="vencimento" name="vencimento" minlength="5" maxlength="5" size="6" value="01/50">
+
+                <br>
+
+                <label for="codSeguranca">Código de segurança</label>
+                <input type="text" id="codSeguranca" name="codSeguranca" minlength="3" maxlength="3" size="1"
+                    value="001">
+
+                <br>
+
+                <input type="submit" value="COMPRAR">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p><b>Criadores: </b>Página desenvolvida por alunos do curso de TI da Instituição Newton Paiva - MG</p>
+
+        <p><b>Nome: </b>George Gonçalves Miranda <b>Telefone: </b>
+            (031) 99345-4571 <b>E-mail: </b><a href="">georgeggmiranda@gmail.com</a>
+
+            <br>
+
+            <b>Nome: </b>Gislaine Rocha de Moura <b>Telefone: </b>
+            (031) 99785-5806<b> E-mail: </b><a href="">gislaine.apple@icloud.com</a>
+
+            <br>
+
+            <b>Nome: </b>Igor Ramos Heleno <b>Telefone: </b>
+            (031) 98936-5299 <b> E-mail: </b><a href="">jogomatador127@gmail.com</a>
+
+            <br>
+
+            <b>Nome: </b>Kayky Fernandes Guimarães Vasconcellos dias <b>Telefone: </b>
+            (031) 99548-5811 <b> E-mail: </b><a href="">Kayky.vasconcellos@outlook.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>
