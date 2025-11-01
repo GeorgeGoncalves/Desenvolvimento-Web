@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco</title>
 
+    <link rel="stylesheet" href="ecommerce.css">
 </head>
 
 <body>
@@ -15,13 +16,14 @@
     </header>
 
     <nav>
-        <ul>
+        <ul class="cabecalho-btn"> <!-- Classe criada especialmente para customizar os botões de navegação. -->
             <li><a href="Index.html">Pagina principal</a></li>
             <li><a href="Produtos.html">Mais Produtos</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="container-formulario">
+        <!-- Classe criada para faciltita o trabalho e reutilizada nos formulários do carrinho. -->
 
         <h2>Fale conosco</h2>
 
@@ -29,17 +31,17 @@
             <fieldset>
                 <legend>Fale conosco</legend>
 
-                <div>
+                <div class="div-central-formulario">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" placeholder="Fulano da Silva Sauro">
                 </div>
 
-                <div>
+                <div class="div-central-formulario">
                     <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="fulano@outlook.com">
                 </div>
 
-                <div>
+                <div class="div-central-formulario">
                     <label for="Assunto">Assunto</label>
                     <input type="text" name="Assunto" id="assunto" placeholder="Diario">
                 </div>
@@ -50,7 +52,7 @@
 
                 <br>
 
-                <input type="submit">
+                <input type="submit" class="btn-formulario">
             </fieldset>
         </form>
     </main>
@@ -77,6 +79,27 @@
             (031) 99548-5811 <b> E-mail: </b><a href="">Kayky.vasconcellos@outlook.com</a>
         </p>
     </footer>
+
+    <script>
+        // Adicionando um evento no click do botão com a classe .btn-faleconosco
+        document.querySelector('.btn-formulario').addEventListener("click", function verificarPreenchimento(event) {
+
+            // Captura o valor dos campos e remove espaços extras com .trim
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const assunto = document.getElementById('assunto').value.trim();
+            const sugestoes = document.getElementById('sugestoes').value.trim();
+
+            // Verifica se algum campo está vazio
+            if (nome == "" || email == "" || assunto == "" || sugestoes == "") {
+                // Exibi um alerta para o usuário
+                alert("Por favor, preencha todos os campos antes de enviar.");
+
+                // Impede o envio do formulário
+                event.preventDefault();
+            }
+        })
+    </script>
 </body>
 
 </html>

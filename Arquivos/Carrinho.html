@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
 
+    <link rel="stylesheet" href="ecommerce.css">
 </head>
 
 <body>
@@ -15,14 +16,15 @@
     </header>
 
     <nav>
-        <ul>
+        <ul class="cabecalho-btn"> <!-- Classe criada especialmente para customizar os botões de navegação. -->
             <li><a href="Index.html">Pagina principal</a></li>
             <li><a href="Produtos.html">Mais Produtos</a></li>
             <li><a href="Fale-Conosco.html">Fale conosco</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="container-formulario">
+        <!-- Classe criada para faciltita o trabalho e reutilizada nos formulários do fale conosco. -->
 
         <h2>Carrinho</h2>
 
@@ -30,21 +32,21 @@
             <fieldset>
                 <legend>Produtos selecionados</legend>
 
-                <div>
+                <div class="div-central-formulario">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" value="Rosa do deserto viúva negra" size="30">
                 </div>
 
                 <br>
 
-                <div>
+                <div class="div-central-formulario">
                     <label for="quantidade">Quantidade</label>
                     <input type="text" id="quantidade" name="qnt" value="3" size="1">
                 </div>
 
                 <br>
 
-                <div>
+                <div class="div-central-formulario">
                     <label for="valor">Valor</label>
                     <input type="text" id="valor" value="236,70" size="6">
                 </div>
@@ -74,7 +76,7 @@
 
                 <br>
 
-                <input type="submit" value="COMPRAR">
+                <input type="submit" value="COMPRAR" class="btn-formulario">
             </fieldset>
         </form>
     </main>
