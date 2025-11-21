@@ -6,25 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
 
-    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="stylesheet" href="../css/ecommerce.css">
 </head>
 
 <body>
-    <header>
-        <img src="../Imagens/LogoEGGIK.png" alt="logo EGGIK" width="100" height="100">
-        <h1>EGGIK Cactoslentas</h1>
-    </header>
+    <?php
+    // Incluindo o arquivo "header.php", onde fica o cabeçalho das páginas.
+    include("../view/header.php");
 
-    <nav>
-        <ul class="cabecalho-btn"> <!-- Classe criada especialmente para customizar os botões de navegação. -->
-            <li><a href="Index.html">Pagina principal</a></li>
-            <li><a href="Produtos.html">Mais Produtos</a></li>
-            <li><a href="Fale-Conosco.html">Fale conosco</a></li>
-        </ul>
-    </nav>
+    // Incluindo o arquivo "navegacao.php", onde fica a navegação do site.
+    include("../view/navegacao.php");
+    ?>
 
+    <!-- Classe criada para faciltita o trabalho e reutilizada nos formulários do fale conosco. -->
     <main class="container-formulario">
-        <!-- Classe criada para faciltita o trabalho e reutilizada nos formulários do fale conosco. -->
+
 
         <h2>Carrinho</h2>
 
@@ -81,28 +77,10 @@
         </form>
     </main>
 
-    <footer>
-        <p><b>Criadores: </b>Página desenvolvida por alunos do curso de TI da Instituição Newton Paiva - MG</p>
-
-        <p><b>Nome: </b>George Gonçalves Miranda <b>Telefone: </b>
-            (031) 99345-4571 <b>E-mail: </b><a href="">georgeggmiranda@gmail.com</a>
-
-            <br>
-
-            <b>Nome: </b>Gislaine Rocha de Moura <b>Telefone: </b>
-            (031) 99785-5806<b> E-mail: </b><a href="">gislaine.apple@icloud.com</a>
-
-            <br>
-
-            <b>Nome: </b>Igor Ramos Heleno <b>Telefone: </b>
-            (031) 98936-5299 <b> E-mail: </b><a href="">jogomatador127@gmail.com</a>
-
-            <br>
-
-            <b>Nome: </b>Kayky Fernandes Guimarães Vasconcellos dias <b>Telefone: </b>
-            (031) 99548-5811 <b> E-mail: </b><a href="">Kayky.vasconcellos@outlook.com</a>
-        </p>
-    </footer>
+    <?php
+    // Incluindo o arquivo "footer.php", onde fica o rodapé do site.
+    include("../view/footer.php");
+    ?>
 </body>
 
 </html>

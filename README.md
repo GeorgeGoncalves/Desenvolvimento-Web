@@ -1,27 +1,164 @@
-<h1 align="left">Projeto da disciplina de Desenvolvimento Web</h1>
+\# 🌵 EGGIK Cactoslentas
 
-###
 
-<p align="left">Projeto da disciplina de Desenvolvimento Web, que compõe a nota avaliativa do aluno, dividido em três partes.</p>
 
-###
+Projeto de e-commerce desenvolvido para a disciplina de Desenvolvimento Web, com foco em suculentas e cactos. O sistema permite exibição de produtos, navegação por páginas e simulação de carrinho de compras.
 
-<h2 align="left">1ª entrega - E-commerce</h2>
 
-###
 
-<p align="left">Requisitos para a 1ª entrega<br><br>1. Página inicial contendo os seguintes itens:<br>o No mínimo dois produtos em destaque<br>o No mínimo uma notícia<br><br>2. Uma pagina contendo uma listagem maior de produtos<br><br>3. Uma página contendo os produtos que o usuário selecionou, simular um carrinho. Destaco que aqui é somente<br>HTML.<br><br>4. Uma página de “fale conosco” com um formulário e campos a serem preenchidos.<br><br>Criar um Site em HTML seguindo as seguintes características:<br><br>Um pequeno site de compras, contendo 4 opções:<br><br>Observações em relação ao site:<br>· A estrutura do site deve contemplar cabeçalho e rodapé, o que isso quer dizer, na parte de cima do site deve<br>ser colocada uma imagem com o nome do site, e no rodapé devem ser colocadas informações relativas ao contato do<br>desenvolvedor (Nome, telefone e e-mail)<br>· Todos os produtos (Produtos em destaque e na listagem) devem apresentar uma imagem ilustrativa, uma pequena<br>descrição e um link com o texto “Adicionar ao carrinho”;<br> · Todas as páginas criadas devem apresentar um menu navegável, criar links locais entre as páginas .html, por<br>exemplo, se o usuário estiver na página inicial ele conseguirá ir para a página com a listagem de produtos, e<br>vice versa;<br><br>Importante: O site ainda não será dinâmico, logo as informações devem ser colocadas manualmente via HTML.</p>
+---
 
-###
 
-<h3 align="center">Tecnologias utilizadas</h3>
 
-###
+\## 📁 Estrutura do Projeto
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" height="40" alt="vscode logo"  />
-</div>
 
-###
+
+EGGIK/
+
+├── README.md                 # Documentação principal do projeto
+
+├── controller/               # Páginas principais do site
+
+│   ├── index.php
+
+│   ├── produtos.php
+
+│   ├── carrinho.php
+
+│   └── faleConosco.php
+
+├── css/                      # Estilos personalizados do site
+
+│   └── ecommerce.css
+
+├── model/                    # Conexão e consultas ao banco de dados
+
+│   ├── conexaoBD.php
+
+│   └── produtoModel.php
+
+├── scriptBancoDados/         # Script de criação e inserção inicial no banco de dados
+
+│   └── index.php
+
+└── view/                     # Componentes visuais reutilizáveis
+
+&nbsp;   ├── destaqueView.php
+
+&nbsp;   ├── footer.php
+
+&nbsp;   ├── header.php
+
+&nbsp;   ├── navegacao.php
+
+&nbsp;   ├── produtoView.php
+
+&nbsp;   └── textoLateral.php
+
+---
+
+
+
+\## 🚀 Como executar o projeto
+
+
+
+1\. Instale o \[XAMPP](https://www.apachefriends.org/index.html)
+
+2\. Certifique-se de que o Apache e o MySQL estão ativos
+
+3\. Coloque a pasta `EGGIK` dentro do diretório `htdocs`
+
+4\. Acesse no navegador:http://localhost/EGGIK/scriptBancoDados/
+
+5\. O script criará o banco de dados e redirecionará para a página principal
+
+
+
+---
+
+
+
+\## 🧠 Funcionalidades
+
+
+
+\- Exibição de produtos em destaque
+
+\- Layout responsivo com Flexbox
+
+\- Formulário de contato estilizado
+
+\- Simulação de carrinho de compras
+
+\- Mapa de localização via Google Maps
+
+\- Organização modular com arquitetura MVC
+
+
+
+---
+
+
+
+\## 🛠️ Tecnologias utilizadas
+
+
+
+\- HTML5
+
+\- CSS3
+
+\- Javascript
+
+\- PHP (com mysqli)
+
+\- MySQL
+
+\- Google Fonts (tipografia)
+
+\- Google Maps (localização)
+
+\- Microsoft Copilot (assistente de desenvolvimento e documentação)
+
+
+
+---
+
+
+
+\## 📌 Observações
+
+
+
+\- A porta do MySQL utilizada é `3307`, diferente da padrão `3306`
+
+\- O banco de dados é criado automaticamente na primeira execução do script
+
+\- Os dados iniciais são inseridos via script em `scriptBancoDados/index.php`
+
+
+
+---
+
+
+
+\## 👨‍💻 Desenvolvedor
+
+
+
+\- George Gonçalves Miranda — georgeggmiranda@gmail.com
+
+
+
+---
+
+
+
+\## 📄 Licença
+
+
+
+Este projeto é de uso acadêmico e não possui licença comercial. Uso livre para fins educacionais.
+
