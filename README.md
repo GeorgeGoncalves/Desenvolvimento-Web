@@ -9,9 +9,33 @@ Projeto de e-commerce desenvolvido para a disciplina de Desenvolvimento Web, com
 ---
 
 
+<<<<<<< HEAD
+=======
+<h2 align="left">2ª entrega - Inclusão de CSS e Javascript no E-commerce</h2>
+
+###
+
+<p align="left">Dando continuidade ao site construído anteriormente na primeira parte efetue as seguintes modificações:<br><br>Adicionar estilo ao site utilizando CSS, os seguintes itens devem ser considerados e apresentados:<br>Definir os principais estilos de sua página em um arquivo externo chamado “ecommerce.css”;<br>A pagina inicial deve ser organizada utilizando as configurações CSS para layout de Website conforme este site: https://www.w3schools.com/css/css_website_layout.asp.<br><br>OBSERVAÇÃO: O site de e-commerce deve utilizar as disposições visuais deste site contudo deve manter o padrão visual (cores e imagens) da primeira entrega. Utilizem DIV para essas configurações.<br><br>A noticia em destaque do site deve utilizar estilo por ID com o seguinte nome: #noticiadestaque { propriedades: valores }<br><br>Utilize a característica de flexbox do CSS para a página de listagem de produtos. https://www.w3schools.com/css/css3_flexbox.asp<br><br>Inserir tratamento nos campos do formulário HTML “fale conosco” utilizando Javascript, de forma que ao clicar no botão de envio é verificado se os campos estão preenchidos pelo usuário;</p>
+
+###
+
+<h3 align="center">Tecnologias utilizadas</h3>
+>>>>>>> 1273596b4032aab70ffccb9fc876e80926cebd0b
 
 \## 📁 Estrutura do Projeto
 
+<<<<<<< HEAD
+=======
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" height="40" alt="vscode logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" height="40" alt="css logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+</div>
+>>>>>>> 1273596b4032aab70ffccb9fc876e80926cebd0b
 
 
 EGGIK/
